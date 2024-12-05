@@ -1,0 +1,93 @@
+/* JavaScript Battle Game Project 
+
+  font-family: "Jolly Lodger", serif; ===H2#DEFEAT 
+  font-family: "Creepster", serif; === DIV#BUTTON
+  font-family: "Miltonian Tattoo", serif; === H2#VICTORY
+  font-family: "New Rocker", system-ui; 
+  font-family: "Trade Winds", system-ui; === H1
+  font-family: "Lacquer", system-ui;
+
+*/
+
+body{
+	background-color: #4B5763;
+	background-image: url("forest3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+
+}
+
+h1 {
+	font-family: "Trade Winds", system-ui;
+	color: red;
+	font-size: 4.5em;
+	text-shadow: 1.75px 1px 1.5px black, -6px -3.7px 1.5px #294350, 3px 4px 8px white;
+	letter-spacing: .1em;
+	animation: glow 6s infinite;
+	line-height: 1.25em;
+}
+
+/* Animation GLOW for h1*/
+@keyframes glow {
+	0% { 
+		text-shadow: 2px 4px 2px red, 4px 5px 1px red, 0 0 20px white;
+		color: white;
+	}
+	50% { 
+		text-shadow: 0 0 10px black, 0 0 20px red, 0 0 30px white;
+		color: black;
+	}
+	100% {
+		text-shadow: 2px 4px 2px red, 4px 5px 1px red;
+		color: white;
+	}
+}
+
+strong{
+	font-size: 1.3em;
+	font-family: "Trade Winds", system-ui;
+}
+
+div#button{
+	font-family: "Jolly Lodger", serif;
+	font-size: 2.5em;
+	letter-spacing: .10em;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 1s;
+	border: white solid 2.25px;
+	background-color: red;
+	color: black;
+	text-shadow: white 3px 3px 2px;
+	box-shadow: 5px 4px 2px black;
+	border: white solid 2.25px;
+}
+
+div#button:hover{
+	background-color: #5D7F92;
+	color: red;
+	text-shadow: 2.2px 2px 1px black;
+	box-shadow: 5px 5px 6px black;
+	border: white solid 2.25px;
+}
+
+h2#victory {
+	font-family: "Miltonian Tattoo", serif;
+	font-size: 3em;
+	color: #ddb71c;
+	text-shadow: 1px .25px .25px white, 2px 2px 2px black;
+	letter-spacing: .05em;
+
+}
+
+h2#defeat {
+	font-family: "Jolly Lodger", system-ui;
+	font-size: 3.4em;
+	letter-spacing: .12em;
+	color: white;
+	text-shadow: 1px .25px .25px black, 3px 2px 3px red, 5px 5px 15px red;
+}
